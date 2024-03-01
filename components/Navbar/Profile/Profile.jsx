@@ -8,7 +8,7 @@ import {TbDownloadOff, TbDownload} from 'react-icons/tb';
 //internal import
 import Style from './Profile.module.css';
 import images from '../../../img';
-
+ 
 const Profile = () => {
   return (
     <div className={Style.profile}>

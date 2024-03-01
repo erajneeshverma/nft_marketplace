@@ -86,7 +86,7 @@ const NavBar = () => {
           <div className={Style.navbar_container_left_bax_input}>
             <div className={Style.navbar_container_left_bax_input_box}>
               <input type='text' placeholder='Search NFT' />
-              <BsSearch onClick={()=>{}} className={Style.seach_icon} />
+              <BsSearch onClick={()=>{}} className={Style.search_icon} />
             </div>
           </div>
         </div>
@@ -104,7 +104,7 @@ const NavBar = () => {
               </div>  
             )}
           </div>
-
+ 
           {/* //Help Center Menu */}
           <div className={Style.navbar_container_right_help}>
             <p onClick={(e)=>openMenu(e)}>Help Center</p>
@@ -123,7 +123,7 @@ const NavBar = () => {
 
           {/* //Button Component */}
           <div className={Style.navbar_container_right_button}>
-            <Button btnText="Create" />
+            <Button btnName="Create" handleClick={()=>{}} />
           </div>
 
           {/* //user profile */}
@@ -143,7 +143,7 @@ const NavBar = () => {
           
           {/* //menu Button - for Mobile Device */}
           <div className={Style.navbar_container_right_menuBtn}>
-              <CgMenuRight className='Stle.menuIcon' onClick={()=> openSideBar()} />
+              <CgMenuRight className={Style.menuIcon} onClick={()=> openSideBar()} />
           </div>
 
         </div>
@@ -151,7 +151,7 @@ const NavBar = () => {
 
       {/* //sidebar Component */}
       {openSideMenu && (
-        <div className={Style.SideBar}>
+        <div className={Style.sideBar}>
           <SideBar setOpenSideMenu = {setOpenSideMenu} />
         </div>
       )}

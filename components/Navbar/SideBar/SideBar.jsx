@@ -73,6 +73,27 @@ const SideBar = ({setOpenSideMenu}) => {
       link: "subscription"
     },
   ]
+
+  const openDiscoverMenu = () =>{
+    if(!openDiscover){
+      setOpenDiscover(true);
+    }else{
+      setOpenDiscover(false);
+    }
+  }
+
+  const openHelpMenu = () =>{
+    if(!openHelp){
+      setOpenHelp(true);
+    }else{
+      setOpenHelp(false);
+    }
+  }
+
+  const closeSideBar = () =>{
+    setOpenSideMenu(false);
+  }
+   
   return (
     <div className={Style.sideBar}>
       <GrClose className={Style.sideBar_closeBtn} onClick={()=> closeSideBar()} />
@@ -136,8 +157,8 @@ const SideBar = ({setOpenSideMenu}) => {
         </div>
       </div>
       <div className={Style.sideBar_button}>
-        <Button btnName="Create" />
-        <Button btnName="Connect Wallet" />
+        <Button btnName="Create" handleClick={()=>{}} />
+        <Button btnName="Connect Wallet" handleClick={()=>{}} />
       </div>
     </div>
   )
