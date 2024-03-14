@@ -22,13 +22,14 @@
 }
 
 
-@media screen and (max-width: 35em) {
+@media screen and (max-width: 320px) {
     .service{
         width: 90%;
     }
-}
-@media screen and (max-width: 50em) {
+}   
+@media screen and (max-width: 425px) {
     .service_box{
+        display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 1rem;
     }
