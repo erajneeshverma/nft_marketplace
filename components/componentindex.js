@@ -7,5 +7,6 @@ import Subscribe from "./subscribe/Subscribe";
 import Title from "./Title/Title";
 import Category from "./Category/Category";
 import BigNFTSlider from "./BigNFTSlider/BigNFTSlider";
+import Filter from "./Filter/Filter";
 
-export {Button,Footer,NavBar, HeroSection, Service, Subscribe, Title, Category, BigNFTSlider};
+export {Button,Footer,NavBar, HeroSection, Service, Subscribe, Title, Category, BigNFTSlider, Filter};
